@@ -8,7 +8,7 @@
 
 .header__menu {
     font-size: 18px;
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
 }
 
 .menu {
@@ -47,12 +47,13 @@
     display: block;
     width: 148px;
     height: 105px;
+    /* padding-top: 1px; */
 }
 
-.header__address {
+.aligned-address_right {
     max-width: 240px;
     justify-self: end;
-    margin-right: 36px;
+    /* margin-right: 36px; */
     /* padding-right: 10px; */
     /* padding-bottom: 30px; */
     /* padding-left: 186px; */
@@ -114,10 +115,10 @@
 }
 
 .aligned-text_right {
+    display: block;
     text-align: right;
-    /* padding: 435px 50px 207px 663px; */
+    margin-right: -0.3em;
     padding-top: 20px;
-    padding-left: 614px;
 }
 
 /* .accent-text {
@@ -167,7 +168,6 @@
     margin: 180px 24px 120px 24px;
     /* padding-top: 74px; */
     /* padding-bottom: 53px; */
-    
 }
 
 .lots__heading {
@@ -208,6 +208,10 @@
     /* margin-top: 30px; */
     /* padding-top: 74px; */
     /* padding-top: 53px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 40px;
 }
 
 .card_type_film {
@@ -216,31 +220,31 @@
     height: 100%; */
     background-image: url(../images/card-lot-01.jpg);
     /* position: relative; */
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-right: 40px; */
     /* padding-bottom: 24px; */
-    padding-right: 40px;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
     /* position: relative; */
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-right: 40px; */
     /* padding-bottom: 47px; */
-    padding-right: 40px;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
     /* position: relative; */
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-right: 40px; */
     /* padding-bottom: 24px; */
-    padding-right: 40px;
 }
 
 .card__title {
@@ -272,12 +276,12 @@
     font-weight: 400;
     font-size: 20px;
     color: #000;
-    padding-left: 40px;
+    margin-left: 40px;
     text-underline-offset: 4.3px;
 }
 
 .about {
-    margin: 120px 24px 180px 24px;
+    margin: 120px 24px 155px 24px;
     display: grid;
     grid-template-columns: 334px auto;
 }
@@ -287,26 +291,13 @@
     /* justify-content: center; */
 }
 
-.about__column-text {
-    /* align-content: start;
-    justify-content: start; */
-    padding-left: 24px;
-    /* padding-bottom: 100px; */
-}
-
 .about__logo {
     /* width: 340px;
     height: 340px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 98px;
-}
-
-.about__logo-image {
-    width: 148px;
-    height: 114px;
-    position: relative;
+    padding-top: 34px;
 }
 
 .background {
@@ -314,10 +305,27 @@
     width: 240px;
     height: 240px;
     border-radius: 100%;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    position: absolute;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+    /* position: absolute; */
+}
+
+.about__column-text {
+    /* align-content: start;
+    justify-content: start; */
+    padding-left: 24px;
+    /* padding-bottom: 100px; */
+    /* align-items: start;     */
+    /* justify-items: start; */
+    /* justify-self: start; */
+	/* align-self: center; */
 }
 
 .about__title {
@@ -326,6 +334,7 @@
     text-transform: uppercase;
     color: #000;
     padding-top: 136px;
+    padding-bottom: 100px;
 }
 
 .about__text {
@@ -334,25 +343,26 @@
     line-height: 120%;
     color: #000;
     padding-right: 5px;
-    /* padding-top: 100px; */
+    /* padding-top: 12px; */
+    padding-bottom: 24px;
+    /* margin-bottom: -76px; */
 }
 
-.first {
-    /* padding-bottom: 24px; */
+/* .first {
+    padding-bottom: 24px;
     padding-top: 100px;
-}
+} */
 
-.second {
+/* .second {
     padding-top: 24px;
-    /* padding-right: 11px; */
-}
+    padding-right: 11px;
+} */
 
 .footer {
     padding: 1px 50px 82px 50px;
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
-    
 }
 
 .footer__menu {
